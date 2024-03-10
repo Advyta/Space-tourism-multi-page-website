@@ -1,0 +1,67 @@
+.home {
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+.destination {
+    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+.crew {
+    background-image: url('../../assets/crew/background-crew-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+.technology {
+    background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+/* @media screen and (max-width: 1024px) {
+    .technology {
+        overflow-x: hidden;
+    }
+} */
+@media screen and (max-width: 770px) {
+    .home {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+    .destination {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
+    .crew {
+        overflow-x: hidden;
+        justify-content: unset;
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+    }
+    .technology{
+        background-image: url('../../assets/technology/background-technology-tablet.jpg');
+        height: 1024px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .home {
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+    }
+    .destination {
+        background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    }
+    .crew {
+        background-image: url('../../assets/crew/background-crew-mobile.jpg');
+        background-position: unset;
+
+    }
+    .technology {
+        background-image: url('../../assets/technology/background-technology-mobile.jpg');
+        height: 710px;
+    }
+}

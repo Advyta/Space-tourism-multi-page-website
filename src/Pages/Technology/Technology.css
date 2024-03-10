@@ -1,0 +1,211 @@
+.num-indicators> *{
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: solid 1px hsl( var(--clr-white) / .25);
+    color: hsl( var(--clr-white));
+    font-size: var(--fs-600);
+}
+.num-indicators{
+    display: flex;
+    flex-direction: column;
+    height: 304px;
+    justify-content: space-between;
+    font-family: var(--ff-serif);
+}
+.num-indicators > *:hover,
+.num-indicators > *:focus{
+    border-color: hsl( var(--clr-white));
+}
+.num-indicators > [aria-pressed = 'true']{
+    background-color: hsl( var(--clr-white));
+    color: hsl( var(--clr-dark) );
+}
+.tech-container{
+    margin: 0px 0px 0px 166.5px;
+    padding: 0px;
+}
+.tech-info{
+    display: flex;
+    padding: 0px;
+    margin-top: 121px;
+}
+.tech-content{
+    margin-left: 48px;
+}
+.tech-content p{
+    width: 444px;
+    color: hsl( var(--clr-light) );
+    font-size: var(--fs-400);
+    line-height: 32px;
+    font-family: var(--ff-sans-normal);
+    word-wrap: break-word;
+}
+.tech-content h3{
+    color: hsl( var(--clr-light) );
+    font-family: var(--ff-sans-cond);
+    font-size: var(--fs-300);
+    letter-spacing: 2.7px;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+.tech-content h1{
+    font-size: var(--fs-700);
+    color: hsl( var(--clr-white));
+    font-family: var(--ff-serif);
+    margin-bottom: 11px;
+}
+.tech-pic{
+    padding: 0px;
+    display: grid;
+}
+.tech-pic picture{
+    width: 515px;
+    height: 527px;
+    justify-self: end;
+}
+@media screen and (max-width: 1410px){
+    .tech-pic picture{
+        justify-self: center;
+        padding-left: 20px;
+    }
+    .tech-content p{
+        width: 380px;
+    }
+    .tech-info{
+        justify-content: flex-end;
+        margin: 56px 155px 97.33px;
+    }
+    .travel-container{
+        flex-direction: column-reverse;
+    }
+    
+    /* .tech-pic img{
+        width: 400px;
+        position: relative;
+    } */
+}
+@media screen and (max-width: 996px) {
+    .tech-pic img{
+        width: 100%;
+        height: auto;
+    }
+    .tech-pic picture{
+        width: 100%;
+        height: auto;
+    }
+    .tech-container{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .heading-content{
+        text-align: start;
+    }
+    .heading-container{
+        margin: 12px 0px 44px 38.5px !important;
+    }
+    .tech-info{
+        flex-direction: column;
+        justify-items: center;
+        width: 458px;
+    }
+    .num-indicators{
+        flex-direction: row;
+        height: 60px;
+        width: 210px;
+        /* justify-self: center; */
+    }
+    .num-indicators > *{
+        height: 60px;
+        width: 60px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+    .num-indicators-container{
+        display: flex;
+        justify-content: center;
+        width: 458px;
+        margin-bottom: 44px;
+    }
+    .tech-content{
+        text-align: center;
+    }
+    .tech-content h3 {
+        margin-bottom: 16px;
+    }
+    .tech-content h1 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    .tech-content p {
+        width: 458px;
+        line-height: 28px;
+        font-size: var(--fs-300);
+    }
+    .tech-content{
+        margin-left: 0px;
+        width: 458px;
+    }
+    @media screen and (max-width: 630px){
+        .tech-info{
+            margin-left: 50px;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .tech-info{
+            margin: 34px 24px 56.33px 35px;
+            width: 327px;
+        }
+        .heading-container{
+            margin: 6px 0px 32px !important;
+        }
+        .heading-content{
+            text-align: center;
+        }
+        .num-indicators > *{
+            height: 40px;
+            width: 40px;
+            font-size: var(--fs-300);
+            letter-spacing: 1px;
+        }
+        .num-indicators-container, .num-indicators{
+            height: 40px;
+        }
+        .num-indicators-container{
+            margin-bottom: 26px;
+        }
+        .num-indicators-container{
+            width: 327px;
+        }
+        .num-indicators{
+            gap: 16px;
+            width: 152px;
+        }
+        .tech-content h3 {
+           font-size: 14px;
+           margin-bottom: 9px;
+           letter-spacing: 2.362px;
+        }
+        .tech-content h1{
+            font-size: 24px;
+        }
+        .tech-content p{
+            font-size: 15px;
+            line-height: 25px;
+            width: 327px;
+            text-align: center;
+            justify-self: center;
+            
+        }
+        .tech-content{
+            display: grid;
+            width: 327px;
+        }
+    }
+}

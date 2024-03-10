@@ -1,0 +1,120 @@
+nav{
+    width: 1385px;
+    height: 96px;
+    margin: 40px 0px 40px 65px;
+}
+
+.navStyles{
+    display: flex;
+}
+@media screen and (min-width: 768px){
+    .line{
+        border-top: 1px solid hsl( var(--clr-white) / .25);
+        margin-left: 64px;
+        margin-right: -48px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+.navMenu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: rgba(255,255,255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    padding-left: 160px;
+    padding-right: 160px;
+    color: hsl( var(--clr-white) / 1);
+}
+.navMenu a{
+    text-decoration: none;
+    color: hsl( var(--clr-white) / 1);
+    margin-left: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+}
+.navMenu a span{
+    font-weight: bold;
+    margin-right: 11px;
+}
+.navMenu a:hover{
+    border-color: hsl( var(--clr-white) / .5);
+}
+.navMenu .selected{
+    border-color: hsl( var(--clr-white) / 1) !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .navMenu {
+        padding: 0px 60px;
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        margin-left: 40px;
+    }
+    .navMenu {
+        padding: 0px 40px;
+        padding-right: 40px;
+    }
+    .navMenu span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .nav {
+        margin-right: 40px;
+    }
+
+    .navButton {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .navMenu {
+        display: none;
+        height: 100vh;
+        width: 71%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 118px;
+        padding-right: unset;
+        padding-left: unset;
+        z-index: 1;
+        
+        /* a:first-of-type {
+            margin-top: unset;
+        } */
+    }
+    .navMenu a {
+        height: 20px;
+        width: 100%;
+        border-bottom: none;
+        border-right: 3px solid rgba(255,255,255,0);
+        margin-top: 32px;
+        padding-left: 32px;
+        margin-left: unset;
+        span {
+            display: block;
+        }
+    }
+
+    .navMenu a:hover {
+        border-color:rgba(255, 255, 255, 0.25);
+    }
+
+}
